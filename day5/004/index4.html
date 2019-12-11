@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #parent {
+            font-size: 20px;
+        }
+
+        #p1 {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+        đơn vị em
+        mặc định 1em = 16px
+
+    1 thẻ khi được đặt font-size làm em
+    thì thẻ đó sẽ tìm thẻ cha, nếu thẻ cha có font-size là px cụ thể
+    thì quy đổi font-size thẻ cha = 1 em
+    ngược lại nếu thẻ cha ko được đặt được font-size
+    thì thẻ con sẽ tìm lên thẻ ông nội và sẽ tìm lên các thẻ cấp trên
+    bao giờ tìm được thẻ ở cấp gần nhất có font-size cụ thể
+    thì dùng số font-size = 1em
+    </pre>
+
+<div id="parent">
+    <div id="container">
+        <p id="p1">Demo font-size em</p>
+    </div>
+</div>
+
+
+</body>
+</html>
