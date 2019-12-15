@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: #ae7e35;
+            width: 640px;
+            margin: 0 auto;
+        }
+
+        .container .col1 {
+            background: yellow;
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+
+        .container .col2 {
+            background: orange;
+            width: 400px;
+            height: 200px;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col1">Cột 1</div>
+        <div class="col2">Cột 2</div>
+    </div>
+
+    <pre>
+        Kết luận : khi thẻ a nằm cạnh thẻ b
+        mà thẻ a bị float sang trái hay sang phải
+        thì thẻ a sẽ kéo thẻ b đi lên trên sang trái hay sang phải
+        tùy theo thẻ a
+        Để ngăn chặn hiện tượng thẻ a khi float sẽ kéo thẻ b bên cạnh nó
+        đi lên trên thì sẽ sử dụng 1 thuộc tính css gọi là clear
+        thuộc tính này sẽ ngăn chặn thẻ b bị kéo lên trên
+    </pre>
+
+</body>
+</html>
