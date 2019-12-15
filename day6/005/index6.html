@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav .menu > li.menu-item {
+            float: left;
+        }
+
+        nav .menu li.menu-item a{
+            /* con hậu duê : con, cháu , chắt ... */
+            background-color: green;
+        }
+
+        nav .menu > li.menu-item > a{
+            /* con truc tiep > */
+            background-color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <pre>
+        selector con trực tiếp
+        .classA .classB => chọn tất cả các thẻ có classB nằm trong
+        classA
+        .classA.classB => chọn tất cả các thẻ có đồng thời cả
+        classA và classB
+        .classA > .classB => chọn tất cả các thẻ có classB nằm
+        trực tiếp trong thẻ có classA
+
+        Bài tập :
+        Chọn tất cả các thẻ li.menu-item nằm trực tiếp trong thẻ ul.menu
+        có nền màu da cam và float:left
+        còn những thẻ li.menu-item cấp 2 nằm bên trong ul.menu không bị float và
+        có màu nền là màu xanh
+
+        CSS chạy từ trên xuống dưới
+
+    </pre>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#">Trang chủ</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#">Trang chủ 1</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Trang chủ 2</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Trang chủ 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Liên hệ</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#">Liên hệ 1</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Liên hệ 2</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Liên hệ 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
