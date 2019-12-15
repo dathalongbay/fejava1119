@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #control {
+            background-color: orange;
+            color: white;
+            padding: 20px;
+        }
+
+        #control::before {
+            content: "Nội dung before";
+            display: block;
+            background-color: red;
+        }
+
+        #control::after {
+            content: 'Nội dung after';
+            display: block;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        ::before và ::after trong css
+        ::before thêm 1 nội dung content có thể là ''
+        vào bên trong phía trước của thẻ được chọn
+        và có thể thêm bất cứ thuộc tính css nào để style content của
+        ::before
+        ::after thêm nội dung content vào bên trong phía sau của thẻ
+        được chọn và có thể bất cứ thuộc tính css nào để style content
+        cho ::after
+    </pre>
+
+    <div id="control">
+        Thẻ div demo
+    </div>
+</body>
+</html>
