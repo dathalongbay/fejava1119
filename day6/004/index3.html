@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .container {
+            background-color: aqua;
+        }
+
+        .col1 {
+            background-color: green;
+            float: left;
+            width: 200px;
+        }
+
+        .col2 {
+            background-color: orange;
+            float: right;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container clearfix">
+        <div class="col1">Cột 1</div>
+        <div class="col2">Cột 2</div>
+    </div>
+
+    <pre>
+        Khi 1 thẻ mẹ chứa thẻ con
+        mà thẻ con bị float trái hay phải
+        đồng thời thẻ mẹ không được đặt chiều cao xác định
+        thì thẻ con sẽ bị trượt thẻ mẹ
+        và thẻ mẹ sẽ có chiều cao = 0
+        => khắc phục vấn đề này người ta sử dụng kỹ thuật
+        clearfix
+
+    </pre>
+</body>
+</html>
