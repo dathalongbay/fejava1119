@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #demo1 {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        position: absolute; ( tuyệt đối )
+        khi 1 thẻ html có position: absolute; nó sẽ lấy 1 thẻ html chứa nó
+        mà có thuộc tính position: relative; để làm gốc tọa độ
+        giả sử nếu các thẻ chứa nó đều có position khác relative
+        thì nó sẽ lấy tọa độ của trình duyệt làm gốc tọa độ
+
+        Trường hợp 1 :
+        bên trên thẻ html có position: absolute; không có thẻ mẹ nào có position
+        là relative ( thẻ #demo1 nằm trực tiếp trong thẻ body )
+    </pre>
+
+    <div id="demo1">
+        Demo absolute
+    </div>
+
+</body>
+</html>
