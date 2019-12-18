@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 150px;
+            left: 60px;
+            z-index: 2;
+        }
+
+        #box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 180px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính z-index
+        chiều sâu trong css cho phép các thẻ nằm đè lên sau theo chiều sâu
+        thuộc tính này chỉ làm việc khi position là absolute hay relative
+        hay sticky hay fixed
+        thẻ nào có z-index cao thẻ đó nằm lên trên thẻ có z-index thấp
+    </pre>
+
+    <div id="box1">Box 1</div>
+    <div id="box2">Box 2</div>
+    <div id="box3">Box 3</div>
+</body>
+</html>
