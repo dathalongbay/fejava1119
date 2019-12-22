@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        :root {
+            --bg-main-color: red;
+            --bg-second-color: orange;
+            --color-main: grey;
+        }
+
+        #box1 {
+            background-color: var(--bg-main-color);
+            color: var(--color-main);
+        }
+
+        #box2 {
+            background-color: var(--bg-second-color);
+            color: var(--color-main);
+        }
+
+        #box3 {
+            background-color: var(--bg-main-color);
+            color: var(--color-main);
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Biến trong css
+        Biến là 1 đối tượng để lưu trữ giá trị
+        trong css biến bắt đầu bằng --
+        và thường được khai báo trong :root
+
+        các đoạn css sau khi muốn lấy giá trị của biến ra
+        thì dùng hàm var(tên biến)
+
+        Việc sử dụng biến sẽ cho phép thay đổi hàng loạt giá trị
+        1 cách nhanh chóng
+    </pre>
+
+    <div id="box1">
+        Box 1
+    </div>
+
+    <div id="box2">
+        Box 2
+    </div>
+
+    <div id="box3">
+        Box 3
+    </div>
+
+</body>
+</html>
