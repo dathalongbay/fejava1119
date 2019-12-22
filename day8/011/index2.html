@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div#target {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        div#target:hover {
+            -ms-transform: translate(50px,100px); /* IE 9 */
+            -webkit-transform: translate(50px,100px); /* Safari prior 9.0 */
+            transform: translate(50px,100px); /* Standard syntax */
+        }
+    </style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div id="target">
+    This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+</body>
+</html>

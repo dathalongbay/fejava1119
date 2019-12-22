@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div#target {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        div#target:hover {
+            -ms-transform: skew(20deg,10deg); /* IE 9 */
+            -webkit-transform: skew(20deg,10deg); /* Safari prior 9.0 */
+            transform: skew(20deg,10deg); /* Standard syntax */
+        }
+    </style>
+</head>
+<body>
+
+<h1>The skew() Method</h1>
+<p>The skew() method skews an element into a given angle.</p>
+
+<div>
+    This a normal div element.
+</div>
+
+<div id="target">
+    This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div>
+
+</body>
+</html>

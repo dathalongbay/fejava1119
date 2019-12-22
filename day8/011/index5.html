@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div#target {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        div#target:hover {
+            -ms-transform: matrix(2, 0, 0.5, 2, 150, 100); /* IE 9 */
+            -webkit-transform: matrix(2, 0, 0.5, 2, 150, 100); /* Safari prior 9.0 */
+            transform: matrix(2, 0, 0.5, 2, 150, 100); /* Standard syntax */
+        }
+    </style>
+</head>
+<body>
+
+<h1>The matrix() Method</h1>
+<p>The matrix() method combines all the 2D transform methods into one.</p>
+
+
+<div id="target">
+    Using the matrix() method.
+</div>
+
+
+</body>
+</html>
