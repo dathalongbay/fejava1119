@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #box1 {
+              width: 100%;
+              height: 300px;
+              box-sizing: border-box;
+              background-image: linear-gradient(red, orange, yellow);
+              margin-bottom: 30px;
+          }
+
+        #box2 {
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            background-image: linear-gradient(to top left, red, orange, yellow);
+            margin-bottom: 30px;
+        }
+
+        #box3 {
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            background-image: linear-gradient(to bottom right, red, orange, yellow);
+            margin-bottom: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <pre>
+        Chuyển màu gradient trong css
+        Có 2 kiểu chuyển màu
+        Linear Gradients  theo các hướng trên dưới trái phải
+        hay theo 30 hay 90 độ
+        Radial Gradients chuyển màu từ tâm thẻ html
+        cú pháp :
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+        ví dụ :
+        background-image: linear-gradient(to bottom right, red, yellow);
+    </pre>
+
+    <div id="box1">
+        Box1
+    </div>
+
+    <div id="box2">
+        Box2
+    </div>
+
+    <div id="box3">
+        Box3
+    </div>
+
+
+
+</body>
+</html>
