@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #box1 , #box2 , #box3 {
+            width: 400px;
+            background-color: yellow;
+            margin-bottom: 50px;
+        }
+
+        #box1 {
+            /*không bao khoảng trắng và không bao văn bản*/
+            white-space: nowrap;
+        }
+        #box2 {
+           /* bao lấy văn bản tự động xuống hàng */
+            white-space: normal;
+        }
+        #box3 {
+            /*gõ văn bản bên trong bên nào hiển thị thế đó*/
+           white-space: pre;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính white-space sẽ chỉ định khoảng trắng và văn bản bên trong 1 thẻ được xử lý thế nào
+    </pre>
+
+    <div id="box1">
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn.
+    </div>
+    <div id="box2">
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn.
+    </div>
+    <div id="box3">
+        Tôi
+        là
+        1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn. Tôi là 1 đoạn văn.
+        Tôi là 1 đoạn văn.
+    </div>
+</body>
+</html>

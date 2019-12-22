@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .fill {object-fit: fill;}
+        .contain {object-fit: contain;}
+        .cover {object-fit: cover;}
+        .scale-down {object-fit: scale-down;}
+        .none {object-fit: none;}
+    </style>
+
+</head>
+<body>
+    <pre>
+        object-fit là thuộc tính được sử dụng để chỉ định làm thế nào
+        thẻ img và thẻ video sẽ được resize từ ảnh gốc cho vừa với kích thước chứa nó
+        thuộc tính này có 5 giá trị :
+        fill ( làm đầy vùng kích thước )
+        contain ( ảnh sẽ nằm trong kích thước được chỉ định )
+        cover ( bao phủ )
+        scale-down ( thu nhỏ lại )
+        none ( không làm gì cả không thay đổi kích thước của ảnh)
+    </pre>
+
+
+    <h1>thuộc tính object-fit</h1>
+    <h1> ảnh gốc có kích cỡ 400*300</h1>
+
+    <h2>ảnh gốc</h2>
+    <img src="paris.jpg" alt="Paris">
+
+    <h2>No object-fit:</h2>
+    <img src="paris.jpg" alt="Paris" style="width:200px;height:400px">
+
+    <h2>object-fit: fill (this is default):</h2>
+    <img class="fill" src="paris.jpg" alt="Paris" style="width:200px;height:400px">
+
+    <h2>object-fit: contain:</h2>
+    <img class="contain" src="paris.jpg" alt="Paris" style="width:200px;height:400px">
+
+    <h2>object-fit: cover:</h2>
+    <img class="cover" src="paris.jpg" alt="Paris" style="width:200px;height:400px">
+
+    <h2>object-fit: scale-down:</h2>
+    <img class="scale-down" src="paris.jpg" alt="Paris" style="width:200px;height:400px">
+
+    <h2>object-fit: none:</h2>
+    <img class="none" src="paris.jpg" alt="Paris" style="width:200px;height:400px">
+
+
+</body>
+</html>
