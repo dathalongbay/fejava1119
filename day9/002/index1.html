@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        body {
+            background: green;
+        }
+
+        /* Áp dụng cho màn hình có kích thước 680px trở xuống
+        từ 0px cho đến 680px
+        */
+        @media screen and (max-width: 680px) {
+
+            body {
+                background: orange;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+    Cú pháp của media query :
+    @media screen and (condition) {
+        selector1 {
+            // code css cho selector1
+        }
+    }
+
+    Kỹ thuật media query dùng để xử lý cho các màn hình có kích cỡ khác nhau
+    như là smartphone , máy tính bảng ipad , laptop , màn hình desktop
+</pre>
+
+</body>
+</html>
