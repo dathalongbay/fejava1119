@@ -31,8 +31,10 @@
             float: right;
         }
 
-        main {
-            overflow: auto;
+        .clearfix::after {
+            display: block;
+            clear: both;
+            content: "";
         }
 
         @media screen and (max-width: 680px) {
@@ -58,7 +60,7 @@
     <h1>Header</h1>
 </header>
 
-<main>
+<main class="clearfix">
     <section class="main-content">
         <h1>Nội dung chính của trang web</h1>
     </section>
