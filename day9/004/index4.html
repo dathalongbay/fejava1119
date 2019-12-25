@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <pre>
+        .col- (extra small devices - screen width less than 576px)
+        => áp dung màn hình điện thoại
+        .col-sm- (small devices - screen width equal to or greater than 576px)
+        => áo dụng màn hình ipad mini ( máy tính bảng )
+        .col-md- (medium devices - screen width equal to or greater than 768px)
+        => áp dụng màn hình laptop
+        .col-lg- (large devices - screen width equal to or greater than 992px)
+        => màn hình to máy tính bàn
+        .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+        => màn hình siêu lớn ( tivi )
+    </pre>
+
+    <pre>
+        Khung chứa bên ngoài cùng ( class .container )
+        Trong khung chứa có các hàng ( class .row )
+        Trong cùng các cột ( hàng chứa cột ) cột có tiền tố là col-*
+        * chính là 1 số từ 1 đến 12
+        Bootstrap sử dựng lưới 12 cột
+    </pre>
+
+    <pre>
+        công thức => ? = 12/số_cột
+        1 cột => .col-sm-? => .col-sm-12
+        2 cột bằng nhau => .col-sm-? => .col-sm-6
+        3 cột bằng nhau => .col-sm-? => .col-sm-4
+        4 cột bằng nhau => .col-sm-? => .col-sm-3
+        6 cột bằng nhau => .col-sm-? => .col-sm-2
+        12 cột bằng nhau => .col-sm-? => .col-sm-1
+    </pre>
+
+    <div class="container">
+        <h1>Lưới 1 cột</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+        </div> <!--end tag .row -->
+    </div> <!-- end tag .container -->
+
+
+    <div class="container">
+        <h1>Lưới 2 cột</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+            <div class="col-sm-6">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+        </div> <!--end tag .row -->
+    </div> <!-- end tag .container -->
+
+    <div class="container">
+        <h1>Lưới 3 cột</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+            <div class="col-sm-4">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+            <div class="col-sm-4">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+        </div> <!--end tag .row -->
+    </div> <!-- end tag .container -->
+
+    <div class="container">
+        <h1>Lưới 4 cột</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+            <div class="col-sm-3">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+            <div class="col-sm-3">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+            <div class="col-sm-3">
+                Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </div>
+        </div> <!--end tag .row -->
+    </div> <!-- end tag .container -->
+
+</body>
+</html>
