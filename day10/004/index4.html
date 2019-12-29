@@ -15,6 +15,8 @@
         Kiểu undefined
         Kiểu null
         Kiểu boolean có 2 giá trị là true hay false
+
+        ** câu lệnh typeof sẽ trả về kiểu của các biến
     </pre>
 
     <script type="text/javascript">
@@ -22,26 +24,31 @@
 
         console.log("------- a");
         console.log(a);
+        console.log(typeof a);
 
         var b = "nguyễn văn an";
         var c = 'nguyễn văn an';
 
         console.log("------- b");
         console.log(b);
+        console.log(typeof b);
 
         console.log("------- c");
         console.log(c);
+        console.log(typeof c);
 
         /* khi khai báo biến nhưng ko gán giá trị thì biến đó có giá trị undefined */
         var d;
 
         console.log("------- d");
         console.log(d);
+        console.log(typeof d);
 
         var e = null;
 
         console.log("------- e");
         console.log(e);
+        console.log(typeof e);
 
         /*kiểu boolean*/
         var f = true;
@@ -49,7 +56,9 @@
 
         console.log("------- f va g");
         console.log(f);
+        console.log(typeof f);
         console.log(g);
+        console.log(typeof g);
 
         /*kiểu mảng chứa được giá trị*/
         var t = [2,4,6,8,10];
@@ -57,13 +66,16 @@
 
         console.log("------- t va t2");
         console.log(t);
+        console.log(typeof t);
         console.log(t2);
+        console.log(typeof t2);
 
         /*kiểu object (đối tượng) trong js có {}*/
         var sinhvien = {ho:"nguyễn",ten:"an", tuoi:21,diachi:"hà nội"};
 
         console.log("------- sinhvien");
         console.log(sinhvien);
+        console.log(typeof sinhvien);
 
 
     </script>
