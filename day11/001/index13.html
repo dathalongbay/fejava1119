@@ -23,11 +23,137 @@
         => số tiền khách hàng phải thanh toán
 
         ví dụ :
-        gia đình A dùng hết 2 m3 => ?
-        gia đình b dùng hết 14 m3 => ?
-        gia đình c dùng hết 26 m3 => ?
-        gia đình d dùng hết 158 m3 => ?
+        - nhập sô nước âm
+        - không nhập
+        - nhập 1 chuỗi
+        - nhập 0 mét 3
+        - gia đình A dùng hết 2 m3 => 15.400
+        - gia đình b dùng hết 14 m3 => 121.000
+        - gia đình c dùng hết 26 m3 => 319.000
+        - gia đình d dùng hết 158 m3 => 3.817.000
+
+        Tester tạo test case
+        - SQL
+        - viết test case
+
+
+        nhà D dùng 158 mét khối
+        còn 158 mét khối chưa tính tiền
+        0 - 10 : 5000*(10) = 50000
+        còn 148 mét khối chưa tính tiền
+        11 - 20 : 8000*(10) = 80000
+        còn 138 mét khối chưa tính tiền
+        20 - 50 : 18000*30=X
+        còn 108 mét khối chưa tính tiền
+        trên 50 mét khối : 23000*108
+
+        => lấy 4 số tiền ở 4 mức khác nhau + vào
+        => tiền nước thải 158*2000
+        => tiền 4 mức + ở bên trên + tiền nước thai = tiên thanh toán chưa thuế
+        => thuế GTGT : 10%
+        => tiền thực tế thanh toán = tiền thuế + tiến nước trước thuế
     </pre>
+
+    <script type="text/javascript">
+
+        // bước 1 đưa tất cả dữ liệu thành biến
+        var gia_tien_muc_1 = 5000;
+        var gia_tien_muc_2 = 8000;
+        var gia_tien_muc_3 = 18000;
+        var gia_tien_muc_4 = 23000;
+        var gia_xu_ly_nuoc_thai = 2000;
+        var thue_gtgt = 10/100;
+
+        // 0 - 10
+        var han_muc_1 = 10;
+        // 11 - 20
+        var han_muc_2 = 10;
+        // 20 - 50
+        var han_muc_3 = 30;
+        // tren 50
+
+        var so_tien_tt_A = 0;
+        var so_tien_tt_B = 0;
+        var so_tien_tt_C = 0;
+        var so_tien_tt_D = 0;
+
+
+        // bước 2
+        var muctieuthu = 158;
+        var tien_nuoc_thai = 2000*muctieuthu;
+        var so_met_khoi_chua_thu_tien = muctieuthu;
+
+
+        // ông A đi thu tiền
+        if (so_met_khoi_chua_thu_tien > 10) {
+            so_tien_tt_A = 10*5000;
+            // 10 * 5000 = 50000
+            so_met_khoi_chua_thu_tien = so_met_khoi_chua_thu_tien-10;
+            // 158 - 10 = 148
+        } else {
+            so_tien_tt_A = so_met_khoi_chua_thu_tien*5000;
+            // 2*5000 = 10000
+            so_met_khoi_chua_thu_tien = 0;
+        }
+
+        // ông B đi thu tiền còn 148
+        if (so_met_khoi_chua_thu_tien > 10) {
+            so_tien_tt_B = 10*8000;
+            so_met_khoi_chua_thu_tien = so_met_khoi_chua_thu_tien-10;
+        } else {
+            so_tien_tt_B = so_met_khoi_chua_thu_tien*8000;
+            so_met_khoi_chua_thu_tien = 0;
+        }
+
+        // ông C đi thu tiền 138
+        if (so_met_khoi_chua_thu_tien > 30) {
+            so_tien_tt_C = 30*18000;
+            so_met_khoi_chua_thu_tien = so_met_khoi_chua_thu_tien-30;
+        } else {
+            // vi dụ 5 mét khôi
+            so_tien_tt_C = so_met_khoi_chua_thu_tien*18000;
+            so_met_khoi_chua_thu_tien = 0;
+        }
+
+        // ông D đi thua tiên 158 - 10 - 10 - 30 = 108
+        if (so_met_khoi_chua_thu_tien > 0) {
+            so_tien_tt_D = so_met_khoi_chua_thu_tien*23000;
+            so_met_khoi_chua_thu_tien = 0;
+        }
+
+
+
+
+        var tien_nuoc_tong = so_tien_tt_A+so_tien_tt_B+so_tien_tt_C+so_tien_tt_D;
+
+        var tien_nuoc_truoc_thue = tien_nuoc_tong + tien_nuoc_thai;
+        var tien_thue = (10/100)*tien_nuoc_truoc_thue;
+
+        var tien_phai_thanh_toan_thuc_te = tien_nuoc_truoc_thue+tien_thue;
+
+
+        console.log("số tiền phải thu ở mức 1 từ 0 - 10 : " + so_tien_tt_A);
+        console.log("số tiền phải thu ở mức 2 từ 10 - 20 : " + so_tien_tt_B);
+        console.log("số tiền phải thu ở mức 3 từ 20 - 50 : " + so_tien_tt_C);
+        console.log("số tiền phải thu ở mức 4 tren 50 : " + so_tien_tt_D);
+        console.log("số tiền nước tổng : " + tien_nuoc_tong);
+        console.log("số tiền nước thải : " + tien_nuoc_thai);
+        console.log("số tiền thuế : " + tien_thue);
+        console.log("số tiền thanh toán cuối cùng : " + tien_phai_thanh_toan_thuc_te);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
 
 </body>
 </html>
