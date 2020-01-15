@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Đăng ký thông tin sinh viên</h1>
+
+    <form name="dangky" method="post" action="">
+        <p>
+            <label>Họ tên</label>
+            <input type="text" name="hoten" value="">
+            <span style="color:red">Họ tên không được để rỗng</span>
+        </p>
+
+        <p>
+            <label>Số điện thoại</label>
+            <input type="text" name="dienthoai" value="">
+            <span style="color:red">Điện thoại phải là các chữ số</span>
+        </p>
+
+        <p>
+            <label>Email</label>
+            <input type="text" name="email" value="">
+            <span style="color:red">Không đúng định dạng email vd : abc@gmail.com</span>
+        </p>
+
+        <p>
+            <label>Mật khẩu</label>
+            <input type="text" name="password" value="">
+            <span style="color:red">Mật khẩu phải trên 8 ký tự và bao gồm cả số và chuỗi</span>
+        </p>
+
+        <p>
+            <label>Nhập lại Mật khẩu</label>
+            <input type="text" name="password" value="">
+            <span style="color:red">Mật khẩu không khớp</span>
+        </p>
+
+        <p>
+            <button>Đăng ký thông tin</button>
+        </p>
+
+    </form>
+
+    <div id="ketqua" style="padding: 20px; background-color: green;">
+        <h3>Đăng ký thành công</h3>
+        <p>Họ tên là : ...</p>
+        <p>Số điện thoại : ...</p>
+        <p>Email : ...</p>
+        <p>Mật khẩu : ...</p>
+    </div>
+
+</body>
+</html>
