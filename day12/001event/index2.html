@@ -10,8 +10,14 @@
         BOX Target
     </div>
 
-    <button>Hiển thị box target</button>
-    <button>Ẩn box target</button>
+    <button onclick="dieukhien('block')">Hiển thị box target</button>
+    <button onclick="dieukhien('none')">Ẩn box target</button>
+
+    <script type="text/javascript">
+        function dieukhien(display) {
+            document.getElementById("target").style.display = display;
+        }
+    </script>
 
 </body>
 </html>
