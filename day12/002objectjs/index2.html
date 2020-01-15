@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <pre>
+        khai báo phương thức ( method ) cho object js
+        gọi đến phương thức của object
+    </pre>
+
+    <script type="text/javascript">
+        var car = {
+            name:"ford escape",
+            model: 2008,
+            price: 1200000000,
+            color:"red",
+            speed: "120km/h",
+            getInfo: function () {
+                // muốn gọi đến chính bản thân object thì
+                // ta dùng từ khóa this bên trong object
+                alert(this.name + " " + this.model + " " + this.price + " "
+                + this.color + " " + this.speed);
+            }
+        };
+        //
+        console.log(car.name);
+        // gọi đến method
+        car.getInfo();
+    </script>
+
+</body>
+</html>
