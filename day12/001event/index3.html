@@ -8,22 +8,55 @@
 
     <div>
         <label>Số 1</label>
-        <input type="text" name="so1" value="">
+        <input type="text" name="so1" id="so1" value="">
     </div>
 
     <div>
         <label>Số 2</label>
-        <input type="text" name="so2" value="">
+        <input type="text" name="so2" id="so2" value="">
     </div>
 
     <div id="ketqua">Kết quả</div>
 
     <div>
-        <button>Tổng</button>
-        <button>Hiệu</button>
-        <button>Tích</button>
-        <button>Thương</button>
+        <button onclick="maytinh('+')">Tổng</button>
+        <button onclick="maytinh('-')">Hiệu</button>
+        <button onclick="maytinh('*')">Tích</button>
+        <button onclick="maytinh('/')">Thương</button>
     </div>
+
+    <script type="text/javascript">
+
+
+        function maytinh(pheptinh) {
+
+            // lấy giá trị của 2 ô input số 1 và số 2
+            var so1 = document.getElementById("so1").value;
+            var so2 = document.getElementById("so2").value;
+
+            if(pheptinh == '+') {
+                var tong = Number(so1) + Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + tong;
+            }
+
+            if(pheptinh == '-') {
+                var hieu = Number(so1) - Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + hieu;
+            }
+
+            if(pheptinh == '*') {
+                var tich = Number(so1) * Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + tich;
+            }
+
+            if(pheptinh == '/') {
+                var thuong = Number(so1) / Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + thuong;
+            }
+        }
+
+
+    </script>
 
 </body>
 </html>
