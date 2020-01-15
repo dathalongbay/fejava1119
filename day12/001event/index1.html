@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Có rất nhiều sự kiện của người dùng ví dụ
+        tải trang , click chuột , double click , hover , gõ phím ...
+    </pre>
+
+    <h1>Sự kiện click chuột</h1>
+
+    <div id="target" style="padding: 20px; border: 1px dashed grey">
+        BOX 1
+    </div>
+
+    <button onclick="doimau('green')">Xanh</button>
+    <button onclick="doimau('red')">Đỏ</button>
+    <button onclick="doimau('yellow')">Vàng</button>
+    <button onclick="doimau('orange')">Da cam</button>
+
+    <script type="text/javascript">
+
+        function doimau(color){
+
+            if (color) {
+                // chọn thẻ id = target
+                document.getElementById("target").style.color = color;
+                document.getElementById("target").style.backgroundColor = "pink";
+                // background-color => backgroundColor
+                document.getElementById("target").style.fontSize = "32px";
+                // font-size => fontSize
+                document.getElementById("target").style.width = "300px";
+                document.getElementById("target").style.height = "300px";
+
+            }
+
+
+
+        }
+    </script>
+
+</body>
+</html>
