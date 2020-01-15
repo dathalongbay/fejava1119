@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Phạm vi của biến
+        1 - Biến toàn cục có ảnh hưởng trong tất cả các đoạn script js
+        sau khi nó được khai báo
+        2 - Biến cục bộ : chính là biến được khai báo bên trong {} của function
+        và không có ảnh hưởng bên ngoài function
+        chỉ có ảnh hưởng trong function
+    </pre>
+
+    <script type="text/javascript">
+
+        // Biến a và b là biến toàn cục
+        var a = 1;
+        var b = 5;
+
+
+        // khi khai báo hàm nhưng biến trong () được gọi tham số
+        function tinhtong(p1, p2){
+
+            // 2 tham số p1 và p2 đều là biến cục bộ
+            // biến c được khai báo bên trong hàm nên nó là biến cục bộ
+            var c = p1 + p2;
+
+            return c;
+
+        }
+
+        // biến ketqua là biến toàn cục
+
+        // biến a sẽ gán giá trị cho tham số p1
+        // biến b sẽ gán giá trị cho tham số p2
+        var ketqua = tinhtong(a,b);
+
+        console.log(ketqua);
+    </script>
+
+</body>
+</html>
