@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>onkeydown sự kiện gõ bàn phím vào trong ô input</h1>
+
+    <div>
+        <input type="text" name="hoten" id="hoten" value="" onkeydown="showInfo()">
+    </div>
+    <label id="chao"></label>
+
+    <script type="text/javascript">
+        function showInfo() {
+            var hoten = document.getElementById("hoten").value;
+            document.getElementById("chao").innerText = "chào " + hoten;
+        }
+    </script>
+
+</body>
+</html>
