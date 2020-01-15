@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Object trong javascript
+        Object là đối tượng
+        Trong đối tượng có 2 khái niệm
+        Properties ( thuộc tính ) chỉ ra đặc điểm tính chất của đối tượng
+        Method ( phương thức ) chỉ ra các hành động của đối tượng
+        để khai báo đối tượng object trong js
+        var ten_bien = {ten_thuoc_tinh:"gia tri",ten_thuoc_tinh:"gia tri"};
+
+        chú ý là tên thuộc tính khi khai báo đổi tượng thì không cần đặt
+        trong "" hay ''
+
+        Để truy cập vào thuộc tính của object
+        sử dụng 2 cách
+        cách 1 : object.property
+        cách 2 : object["property"]
+    </pre>
+
+    <div id="info">
+        <h4>Thông tin ô tô</h4>
+        <p id="name"></p>
+        <p id="model"></p>
+        <p id="price"></p>
+        <p id="color"></p>
+        <p id="speed"></p>
+    </div>
+
+    <button onclick="showInfo()">Hiện ra thông tin của ô tô</button>
+
+    <script type="text/javascript">
+
+
+
+        function showInfo() {
+            // khai báo đối tượng
+            var car = {name:"ford escape", model: 2008, price: 1200000000, color:"red", speed: "120km/h"};
+
+            var student = {name:"nguyen lan anh", gender:"nữ", age: 21, address:"hà nội"};
+
+            // Truy cập vào đối tượng
+
+            document.getElementById("name").innerHTML = car.name;
+            document.getElementById("model").innerHTML = car.model;
+            document.getElementById("price").innerHTML = car.price;
+            document.getElementById("color").innerHTML = car.color;
+            document.getElementById("speed").innerHTML = car.speed;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
