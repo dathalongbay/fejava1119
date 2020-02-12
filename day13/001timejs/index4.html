@@ -8,7 +8,58 @@
     <h1>Viết 1 đoạn js tính xem con bao nhiêu ngày nữa là sn của bạn</h1>
     <pre>
         Gợi ý dùng hàm getTime() để lấy thời gian timestamp ra để tính toán
+        Cách làm :
+        Bước 1 : lấy thời gian hiện tại
+        Bước 2 : lấy sn năm nay của bạn
+        Bước 3 : kiểm tra xem sn năm nay của bạn đã qua chưa
+        Bước 4A : nếu chưa qua thì chỉ cần lấy (sinh nhật năm nay - thoi gian hiện tại)
+        Bước 4B : nếu qua rồi thì làm ( sinh nhất năm sau - thơi gian hiện tại )
+        hoặc ( sinh nhật năm nay + thời gian trong 1 năm - thời gian hiện tại )
+        12*30*24*60*60*1000 = ? mili giây trong 1 năm
+
     </pre>
+
+    <script type="text/javascript">
+        // sinh nhật
+        var sn = new Date(1990,9,7);
+        console.log(sn);
+        // thời gian hiện tại
+        var d = new Date();
+        console.log(d);
+
+        // thời gian sống ( khoảng cách )
+        var distance = d.getTime() - sn.getTime();
+        console.log(distance);
+        // in ra số tuổi
+        var age = distance/(1000*60*60*24*30*12);
+        console.log(age + " tuổi");
+
+
+        // trả về 2020
+        var yearCurrent = d.getFullYear();
+
+        // tạo ra sinh nhật năm nay
+        // thời gian đọc được
+        var snCurrent = new Date(yearCurrent,9,7);
+        console.log(snCurrent);
+
+
+        if (snCurrent.getTime() < d.getTime()) {
+            // sinh nhật năm nay đã qua rồi
+            var snNextYear = snCurrent.getTime()+(1000*60*60*24*30*12);
+            // sn 2021
+            var countDaySn = snNextYear-d.getTime();
+            // trả về mili giây
+            var kq = countDaySn/(1000*60*60*24);
+            console.log(kq + " ngày");
+        } else {
+            // sinh nhất năm nay chưa đến
+            var countDaySn = snCurrent.getTime()-d.getTime();
+            var kq = countDaySn/(1000*60*60*24);
+            console.log(kq + " ngày");
+        }
+
+    </script>
 
 </body>
 </html>
