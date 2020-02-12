@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Bộ chọn Selector trong jquery</h1>
+
+    <h1>Thẻ h1</h1>
+    <h2>Thẻ h2</h2>
+    <h3>Thẻ h3</h3>
+    <div>Thẻ div</div>
+    <p>Thẻ p</p>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("h1").css("color","red");
+            $("h2").css("color","green");
+            $("h3").css("background-color","violet");
+            $("div").css("border","1px solid orange");
+            $("p").css("border","1px solid violet");
+
+        });
+    </script>
+
+
+</body>
+</html>
