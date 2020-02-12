@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Cài đăt jquery</h1>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    // viết mã jquery sau khi đã load thư viện thành công
+
+    /*
+    * Document ready hiểu đơn giản là load tải xong tất cả
+    * mô hình DOM của trạng
+    * mô hình DOM chính là mô hình của các thẻ html
+    *
+    * cú pháp jquery có ký hiện $ đại diện cho selector
+    * selector là bộ chọn
+    * bô chọn css class : .classA
+    * bộ chọn css id : #idA
+    * bộ chọn jquery class : $(".classA")
+    * bộ chọn jquery id : $("#idA")
+    * bộ chọn javascript id : document.getElementById(id)
+    * bộ chọn javascript class : document.getElementByClassName()
+    * bộ chọn js theo tên thẻ : document.getElementByTagName()
+    * */
+
+    // 2 đối tượng js mà jquery không cần đặt trong nháy kép là document và window
+    // trong ready truyền vào 1 function không có tên
+    // trong trường hợp function không có tên
+    // function() {}
+    // function không có tên đóng vai trò là callback
+    // callback được hiểu đơn giản là hàm mà thực hiện sau 1 hành động nào đó
+    //$(document).ready();
+    $(document).ready(function(){
+        // code sẽ được chạy khi mà DOM tải xong hoàn toàn
+        alert("Đã tải xong trang");
+    });
+
+
+</script>
+
+
+</body>
+</html>
