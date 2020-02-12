@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>SELECTOR theo id</h1>
+
+    <div id="divA">DIV A</div>
+    <div id="divB">DIV B</div>
+    <div id="divC">DIV C</div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#divA").css("color","red");
+            $("#divB").css("color","green");
+            $("#divC").css("color","yellow");
+
+
+        });
+    </script>
+
+</body>
+</html>
