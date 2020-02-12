@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Định dạng thời gian ( format ) trong js</h1>
+    <pre>
+        3 định dạng thời gian trong js
+        1 - ISO Date	"2015-03-25" (The International Standard)
+        2 - Short Date	"03/25/2015"
+        3 - Long Date	"Mar 25 2015" or "25 Mar 2015"
+        Mặc định khi dùng hàm Date() sẽ trả về thời gian đầy đủ ví dụ :
+        Wed Mar 25 2015 07:00:00 GMT+0700 (Indochina Time)
+
+    </pre>
+
+    <script type="text/javascript">
+        // truyền thời gian cụ thể vào trong Date()
+        // cách 3 tạo ra thời gian trong js
+        var d = new Date("2015-03-25");
+
+        console.log(d);
+    </script>
+</body>
+</html>

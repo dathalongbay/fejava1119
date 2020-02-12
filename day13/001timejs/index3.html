@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Các hàm để lấy thời gian trong JS</h1>
+    <pre>
+        getFullYear()	Get the year as a four digit number (yyyy)
+        getMonth()	Get the month as a number (0-11)
+        getDate()	Get the day as a number (1-31)
+        getHours()	Get the hour (0-23)
+        getMinutes()	Get the minute (0-59)
+        getSeconds()	Get the second (0-59)
+        getMilliseconds()	Get the millisecond (0-999)
+        getTime()	Get the time (milliseconds since January 1, 1970)
+        getDay()	Get the weekday as a number (0-6)
+
+        Có 2 kiểu thời gian
+        1 - dành cho con người đọc được 2015-03-25 12:00:00
+        có ý nghĩa cho việc hiển thị
+        2 - timestamp ( tính miligiay ) tính từ 1 tháng 1 năm 1970
+        thời gian có ý nghĩa chủ yếu trong việc tính toán
+        ví dụ : tính còn bao nhiêu ngày nữa thì đến ngày sinh nhật gần nhất
+    </pre>
+    <script type="text/javascript">
+        var d = new Date();
+        // lấy năm đầy đủ
+        console.log(d.getFullYear());
+        // lấy tháng
+        console.log(d.getMonth());
+        // lấy ngày trong tháng 1 - 31
+        console.log(d.getDate());
+        // lấy giờ
+        console.log(d.getHours());
+
+        //  chu ý getTime()
+
+        // 1-1-1970 cho đến bây giờ
+        console.log(d.getTime());
+
+    </script>
+</body>
+</html>
