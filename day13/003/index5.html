@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>mouseenter di chuột vào</h1>
+    <h1>mouseleave di chuột ra</h1>
+
+    <div id="target" style="width: 100px; height: 100px; background-color: green">
+        Target
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            /**
+             * hàm on cho phép gắn nhiều sự kiện 1 lúc vào
+             * 1 selector
+             * .on("event", callback);
+             */
+            $("#target").on("mouseenter", function () {
+
+                /*
+                * $(this) chính là đối tượng đang bị tác động
+                * */
+
+                $(this).css("background-color", "orange");
+            }).on("mouseleave", function () {
+                $(this).css("background-color", "green");
+            });
+
+
+
+        });
+    </script>
+
+
+</body>
+</html>
