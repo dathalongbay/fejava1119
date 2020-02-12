@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Sự kiện trong jquery</h1>
+
+    <p>thẻ p demo</p>
+
+    <button id="b1">Click me</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            /**
+             * hàm on cho phép gắn nhiều sự kiện 1 lúc vào
+             * 1 selector
+             * .on("event", callback);
+             */
+            $("#b1").on("click", function () {
+                $("p").css("color", "red");
+            }).on("dblclick", function () {
+                $("p").css("color", "orange");
+            });
+
+
+
+        });
+    </script>
+</body>
+</html>

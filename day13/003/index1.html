@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Sự kiện trong jquery</h1>
+
+    <p>thẻ p demo</p>
+
+    <button id="b1">Click me</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            /*
+            * truyền 1 callback vào trong hàm click
+            * callback là hàm ko tên
+            * */
+            $("#b1").click(function(){
+                // viết code trong callback
+                $("p").css("color", "red");
+            });
+
+
+
+        });
+    </script>
+</body>
+</html>
