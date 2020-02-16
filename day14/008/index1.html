@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <pre>
+        method .remove()
+        xóa bỏ 1 đối tượng thẻ html hoàn toàn
+        method .empty() làm rỗng hoàn toàn 1 thẻ html
+    </pre>
+
+    <div id="target1" style="border: 1px solid red">
+        <p>Nội dung target1</p>
+    </div>
+
+    <div id="target2" style="border: 1px solid orange; margin: 10px">
+        <p>Nội dung target2</p>
+    </div>
+
+    <div style="margin: 10px">
+        <button id="remove">Remove target 1</button>
+        <button id="empty">Empty target 2</button>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+
+            $("#remove").on("click", function () {
+                $("#target1").remove();
+            });
+
+            $("#empty").on("click", function () {
+                $("#target2").empty();
+            });
+
+        });
+
+    </script>
+</body>
+</html>
