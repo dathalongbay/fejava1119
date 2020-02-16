@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .demo1 {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+addClass() - thêm 1 hay nhiều class cho 1 đối tượng thẻ html
+removeClass() - gỡ bỏ 1 hay nhiều class cho 1 đối tượng thẻ html
+toggleClass() - bật tắt class cho 1 đối tượng thẻ html
+    </pre>
+
+    <div id="target" class="demo">
+        DEMO JQUERY CLASS
+    </div>
+
+    <div style="margin: 10px">
+        <button id="addClass">addClass</button>
+        <button id="removeClass">removeClass</button>
+        <button id="toggleClass">toggleClass</button>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+
+            $("#addClass").on("click", function () {
+                $("#target").addClass("demo1");
+            });
+
+            $("#removeClass").on("click", function () {
+                $("#target").removeClass("demo1");
+            });
+
+            $("#toggleClass").on("click", function () {
+                $("#target").toggleClass("demo1");
+            });
+
+
+
+        });
+
+    </script>
+
+</body>
+</html>
