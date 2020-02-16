@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <pre>
+        method css trong jquery
+        - thêm 1 thuộc tính css
+        $(selector).css("tên thuộc tính css", "giá trị");
+        - thêm nhiều thuộc tính css
+        $(selector).css({"thuộc tính css 1": "giá trị", "thuộc tính css 2": "giá trị","thuộc tính css 3": "giá trị",});
+    </pre>
+
+    <div id="target" style="border: 1px solid red">
+        target
+    </div>
+
+    <button id="css1">Thêm 1 thuộc tính css</button>
+    <button id="css2">Thêm nhiều thuộc tính css</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+
+            $("#css1").on("click", function () {
+                $("#target").css("font-size", "32px");
+            });
+
+            $("#css2").on("click", function () {
+                $("#target").css({"background":"red","color": "green", "padding": "20px"});
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>
