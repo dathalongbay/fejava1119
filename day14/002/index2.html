@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #target1 {
+            width: 100px;
+            height: 70px;
+            background-color: green;
+        }
+
+        #target2 {
+            width: 100px;
+            height: 70px;
+            background-color: yellow;
+        }
+
+        #target3 {
+            width: 100px;
+            height: 70px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="target1">
+        target1
+    </div>
+
+    <div id="target2">
+        target2
+    </div>
+
+    <div id="target3">
+        target3
+    </div>
+
+    <button id="fadeToggle">fadeToggle</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#fadeToggle").on("click", function () {
+                $("#target1").fadeToggle();
+                $("#target2").fadeToggle("slow");
+                $("#target3").fadeToggle(3000);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
