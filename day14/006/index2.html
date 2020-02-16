@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        đặt lại nội dung html cho seletor
+        .html("nội dung html")
+    </pre>
+
+    <div id="target">
+        <p>Nội dung của div target</p> <a href="#">Thẻ a</a>
+    </div>
+
+    <button id="control">đặt nội dung html</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#control").on("click", function () {
+                $("#target").html("<span>Thẻ span</span>");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

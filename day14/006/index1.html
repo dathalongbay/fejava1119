@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+        Lấy nội dung và thuộc tính bằng jquery
+        text() lấy nội dung văn bản của selector
+        khi đặt lại văn bản cho thẻ html
+        => text("văn bản");
+
+    </pre>
+
+<div id="target">Nội dung của div target</div>
+
+<button id="control">Đặt lại nội dung</button>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $("#control").on("click", function () {
+            $("#target").text("ngày 16 tháng 2 năm 2020");
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
