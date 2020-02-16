@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #target {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>Hiệu ứng show/ hide của jquery</pre>
+
+    <div id="target">
+
+    </div>
+
+    <button id="show">Hiện</button>
+    <button id="hide">Ẩn</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#show").on("click", function () {
+                $("#target").show();
+            });
+
+            $("#hide").on("click", function () {
+                $("#target").hide();
+            });
+        });
+
+    </script>
+
+</body>
+</html>
