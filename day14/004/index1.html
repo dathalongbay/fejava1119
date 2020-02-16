@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #target {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="target">
+        target
+    </div>
+
+    <button id="animation" style="margin: 200px">Hoạt ảnh</button>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#animation").on("click", function () {
+                $("#target").animate({
+                    width: "150px",
+                    height: "150px",
+                    top: "20px",
+                    left: "20px"
+                });
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+</html>
