@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #container {
+            padding: 10px;
+            border: 1px solid green;
+        }
+
+        #container #box {
+            padding: 20px;
+            border: 1px solid red;
+        }
+
+        #box p {
+            border: 1px dashed orange;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Thêm html cho trang web
+        append() - Chèn nội dung vào phía cuối bên trong của đối tượng được chon
+    prepend() - Chèn nội dung vào phía đầu bên trong của đối tượng được chọn
+    after() - Chèn nội dung vào sau đối tượng được chọn
+    before() - Chèn nội dung vào trước đối tượng được chọn
+    </pre>
+
+    <div id="container">
+        <div id="box">
+            <p>Nội dung chính</p>
+        </div>
+    </div>
+
+    <div style="margin: 30px">
+        <button id="append">append()</button>
+        <button id="prepend">prepend()</button>
+        <button id="after">after()</button>
+        <button id="before">before()</button>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#append").on("click", function () {
+                $("#box").append("<p style='color:red'>Thêm append bên trong phía sau</p>");
+            });
+
+            $("#prepend").on("click", function () {
+                $("#box").prepend("<p style='color:red'>Thêm prepend bên trong phía trước</p>");
+            });
+
+            $("#after").on("click", function () {
+                $("#box").after("<p style='color:red'>Thêm after bên ngoài phía sau</p>");
+            });
+
+            $("#before").on("click", function () {
+                $("#box").before("<p style='color:red'>Thêm before bên ngoài phía trước</p>");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
