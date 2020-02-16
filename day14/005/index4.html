@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Lấy nội dung và thuộc tính bằng jquery
+        attr() lấy thuộc tính của thẻ html
+    </pre>
+
+   <a id="target" href="www.zing.vn" target="_blank" title="trang báo zing">Zing.vn</a>
+
+    <button id="control">Lấy nội dung a</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#control").on("click", function () {
+                var href = $("#target").attr("href");
+                console.log(href);
+                var target = $("#target").attr("target");
+                console.log(target);
+
+                var title = $("#target").attr("title");
+                console.log(title);
+
+                var id = $("#target").attr("id");
+                console.log(id);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
