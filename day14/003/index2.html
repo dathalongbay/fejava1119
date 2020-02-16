@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="target" style="height: 150px; background-color: red">
+
+    </div>
+
+    <button id="slideUp">slideUp</button>
+    <button id="slideDown">slideDown</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#slideUp").on("click", function () {
+                $("#target").slideUp(3000);
+            });
+
+            $("#slideDown").on("click", function () {
+                $("#target").slideDown(3000);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
