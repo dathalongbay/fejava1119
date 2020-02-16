@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Lấy nội dung và thuộc tính bằng jquery
+        html() lấy nội dung văn bản và cả mã html của selector
+    </pre>
+
+    <div id="target">
+        <p>Nội dung của div target</p> <a href="#">Thẻ a</a>
+    </div>
+
+    <button id="control">Lấy nội dung html</button>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#control").on("click", function () {
+                var txt = $("#target").html();
+                alert(txt);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
