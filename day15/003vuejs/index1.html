@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    {{ message }}
+
+    {{ abc }}
+</div>
+
+<script type="text/javascript">
+
+    /**
+     * backend java trả về API
+     * dữ liệu
+     * VUEJS or reactjs gọi api để nhận dữ liệu
+     * sau đó bind truyền dữ liệu từ api để render ra view hiển thị
+     * @type {Vue}
+     */
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue T3h!',
+            abc: "Hôm nay là buổi cuối FE"
+        }
+    })
+</script>
+
+</body>
+</html>
