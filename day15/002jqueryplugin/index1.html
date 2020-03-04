@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <style type="text/css">
+        .owl-carousel .owl-item-p {
+            padding: 20px;
+            background: orange;
+            color: white;
+        }
+
+        .owl-nav button{
+            padding: 10px !important;
+            background-color: green !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Set up your HTML -->
+<div class="owl-carousel">
+    <div class="owl-item-p"> Your Content </div>
+    <div class="owl-item-p"> Your Content </div>
+    <div class="owl-item-p"> Your Content </div>
+    <div class="owl-item-p"> Your Content </div>
+    <div class="owl-item-p"> Your Content </div>
+    <div class="owl-item-p"> Your Content </div>
+    <div class="owl-item-p"> Your Content </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+
+
+    $(document).ready(function(){
+        // gọi plugin
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
