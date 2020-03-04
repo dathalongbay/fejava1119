@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+<div id="app-2">
+  <span v-bind:title="message">
+    {{ abc }}
+  </span>
+</div>
+
+
+<script type="text/javascript">
+
+    var app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: 'Đổ dữ liệu vào thuộc tính của thẻ thông qua v-bind của vuejs',
+            abc: "văn bản"
+        }
+    })
+</script>
+
+
+</body>
+</html>
