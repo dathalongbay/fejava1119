@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<pre>
+    Các phương thức tìm hậu duệ
+    children() trả về tất cả con trực tiếp của thẻ đang được chọn
+    find() trả về con , cháu , chắt ... hậu duệ
+</pre>
+
+<div class="container" style="padding: 20px">
+    <section class="parent" style="padding: 20px">
+        <p class="child">Thẻ con 1</p>
+        <p class="child">Thẻ con 2</p>
+        <p class="child">Thẻ con 3</p>
+        <div>
+            <p>The p cấp bên trong</p>
+        </div>
+    </section>
+
+    <section class="parent" style="padding: 20px">
+        <p class="child">Thẻ con 1</p>
+        <p class="child">Thẻ con 2</p>
+        <p class="child">Thẻ con 3</p>
+        <div>
+            <p>The p cấp bên trong</p>
+        </div>
+    </section>
+</div>
+
+<button id="control">Test children()</button>
+<button id="control1">Test find()</button>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $("#control").on("click", function () {
+            $(".container").children().css("border", "1px solid red");
+        });
+
+        $("#control1").on("click", function () {
+            $(".container").find("p").css("border", "1px solid orange");
+        });
+
+    });
+
+</script>
+</body>
+</html>
