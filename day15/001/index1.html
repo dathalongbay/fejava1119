@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Thuộc tính jquery tìm lên tổ tiên ( thẻ mẹ cấp bên trên )</h1>
+
+<pre>
+    parent() trả về thẻ mẹ trực tiếp của thẻ đang được chọn
+    parents() trả về tất cả các thẻ ở cấp bên trên cho tới thẻ gốc
+    là thẻ html
+</pre>
+
+<div class="container" style="padding: 20px">
+    <section class="parent" style="padding: 20px">
+        <p class="child">Thẻ con</p>
+    </section>
+</div>
+
+<button id="control">Test parent()</button>
+<button id="control1">Test parents()</button>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $("#control").on("click", function () {
+            $(".child").parent().css("border", "1px solid red");
+        });
+
+        $("#control1").on("click", function () {
+            $(".child").parents().css("border", "1px solid orange");
+        });
+
+    });
+
+</script>
+</body>
+</html>
